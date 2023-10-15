@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'learning_logs',
     'users',
+    'bootstrap3'
 ]
 
 MIDDLEWARE = [
@@ -123,3 +124,13 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# 我的设置
+
+LOGIN_URL = '/users/login'
+
+# django-bootstrap3, 引入jquery，使能够使用Bootstrap模板提供的一些交互元素
+
+BOOTSTRAP3 = {
+    'include_jquery': True
+}
